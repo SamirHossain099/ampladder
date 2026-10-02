@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ampladder"
+version = "0.1.0"
+description = "Checks for intracranial decoding benchmarks: amplitude ladder, fold time-leakage audit, electrode-selection audit, validated batched MFDFA"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Samir Hossain"}]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "pandas>=2.0"]
+
+[project.optional-dependencies]
+gpu = ["torch>=2.1"]
+test = ["pytest>=7", "fdnkit>=1.1"]
+
+[project.urls]
+Repository = "https://github.com/SamirHossain099/ampladder"
+
+[tool.setuptools.packages.find]
+where = ["src"]

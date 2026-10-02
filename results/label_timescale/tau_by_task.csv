@@ -1,0 +1,16 @@
+task,tau_s_median
+delta_volume,1.0
+pitch,1.0
+onset,1.0
+gpt2_surprisal,1.0
+word_index,1.0
+word_length,1.0
+word_gap,1.0
+word_head_pos,1.0
+word_part_speech,1.0
+face_num,2.0
+local_flow,2.0
+global_flow,2.5
+speech,11.0
+volume,17.0
+frame_brightness,34.5

@@ -1,0 +1,48 @@
+{
+  "rows": 3345492,
+  "tasks": [
+    "onset",
+    "speech",
+    "volume",
+    "delta_volume",
+    "pitch",
+    "word_index",
+    "word_gap",
+    "gpt2_surprisal",
+    "word_head_pos",
+    "word_part_speech",
+    "word_length",
+    "global_flow",
+    "local_flow",
+    "frame_brightness",
+    "face_num"
+  ],
+  "rows_by_split_role": "{('cross_session', 'test'): 295298, ('cross_session', 'train'): 590596, ('cross_session', 'val'): 295298, ('cross_subject', 'test'): 247044, ('cross_subject', 'train'): 489020, ('cross_subject', 'val'): 247044, ('within', 'test'): 295328, ('within', 'train'): 590596, ('within', 'val'): 295268}",
+  "unique_windows_per_session": {
+    "1_1": 13592,
+    "1_2": 10943,
+    "2_0": 9604,
+    "2_4": 10768,
+    "3_0": 12933,
+    "3_1": 10216,
+    "4_0": 9063,
+    "4_1": 10120,
+    "7_0": 12621,
+    "7_1": 9765,
+    "10_0": 11050,
+    "10_1": 13412
+  },
+  "unique_windows_total": 134087,
+  "electrodes_per_subject": {
+    "btbank1": 120,
+    "btbank2": 119,
+    "btbank3": 109,
+    "btbank4": 120,
+    "btbank5": 120,
+    "btbank6": 120,
+    "btbank7": 119,
+    "btbank8": 120,
+    "btbank9": 93,
+    "btbank10": 120
+  }
+}

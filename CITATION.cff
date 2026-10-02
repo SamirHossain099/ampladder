@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use ampladder, please cite it as below."
+title: "ampladder: checks for intracranial decoding benchmarks"
+type: software
+authors:
+  - given-names: Samir
+    family-names: Hossain
+    orcid: "https://orcid.org/0009-0003-8986-0946"
+    affiliation: "Department of Electrical and Computer Engineering, Texas Tech University"
+version: 0.1.0
+date-released: 2026-10-02
+license: MIT
+repository-code: "https://github.com/SamirHossain099/ampladder"
+keywords:
+  - intracranial EEG
+  - stereo-EEG
+  - decoding benchmark
+  - foundation models
+  - detrended fluctuation analysis
+  - data leakage
+  - reproducibility

@@ -1,0 +1,84 @@
+{
+  "registered": false,
+  "equivalence_margin": 0.02,
+  "settings": {
+    "smax128_order1": {
+      "comparison": "S1_H3_128_1",
+      "split": "within",
+      "a": "L2",
+      "b": "brainbert_perwindow",
+      "n_sessions": 12,
+      "sessions_dropped": [],
+      "mean_diff": -0.0011151987019638692,
+      "ci_lo": -0.015240018829644106,
+      "ci_hi": 0.013735943304595986,
+      "equivalent_within_margin": true,
+      "primary": false
+    },
+    "smax256_order1": {
+      "comparison": "S1_H3_256_1",
+      "split": "within",
+      "a": "L2",
+      "b": "brainbert_perwindow",
+      "n_sessions": 12,
+      "sessions_dropped": [],
+      "mean_diff": -0.004359005362565486,
+      "ci_lo": -0.018428958367799432,
+      "ci_hi": 0.010613531293000661,
+      "equivalent_within_margin": true,
+      "primary": true
+    },
+    "smax512_order1": {
+      "comparison": "S1_H3_512_1",
+      "split": "within",
+      "a": "L2",
+      "b": "brainbert_perwindow",
+      "n_sessions": 12,
+      "sessions_dropped": [],
+      "mean_diff": -0.009378100927775199,
+      "ci_lo": -0.023958691255332214,
+      "ci_hi": 0.005023122312467362,
+      "equivalent_within_margin": false,
+      "primary": false
+    },
+    "smax128_order2": {
+      "comparison": "S1_H3_128_2",
+      "split": "within",
+      "a": "L2",
+      "b": "brainbert_perwindow",
+      "n_sessions": 12,
+      "sessions_dropped": [],
+      "mean_diff": 0.007210233117296461,
+      "ci_lo": -0.012036957865093382,
+      "ci_hi": 0.024777213625648033,
+      "equivalent_within_margin": false,
+      "primary": false
+    },
+    "smax256_order2": {
+      "comparison": "S1_H3_256_2",
+      "split": "within",
+      "a": "L2",
+      "b": "brainbert_perwindow",
+      "n_sessions": 12,
+      "sessions_dropped": [],
+      "mean_diff": 0.0005867514073032339,
+      "ci_lo": -0.015045084505345729,
+      "ci_hi": 0.01545491606899209,
+      "equivalent_within_margin": true,
+      "primary": false
+    },
+    "smax512_order2": {
+      "comparison": "S1_H3_512_2",
+      "split": "within",
+      "a": "L2",
+      "b": "brainbert_perwindow",
+      "n_sessions": 12,
+      "sessions_dropped": [],
+      "mean_diff": -0.004418907628976204,
+      "ci_lo": -0.01878174722307348,
+      "ci_hi": 0.009409261031334002,
+      "equivalent_within_margin": true,
+      "primary": false
+    }
+  }
+}

@@ -1,0 +1,15 @@
+line-length = 100
+target-version = "py310"
+
+[lint]
+select = ["E", "F", "W", "I", "UP"]
+ignore = [
+    "E501",   # line length is handled by line-length above
+    "E402",   # module import not at top: resources must precede numpy in the analysis scripts
+]
+
+[lint.isort]
+known-first-party = ["ampladder"]
+# The analysis scripts import each other as sibling modules from analysis/.
+known-local-folder = ["batch_dfa", "d1_selection", "d3_common_time_index", "analyze", "resources", "decode",
+                      "extract_features", "figures"]

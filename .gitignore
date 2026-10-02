@@ -1,0 +1,34 @@
+# Deny by default, then allow. A file added later and forgotten is not published; adding one to the
+# public repository is a deliberate edit of this list. tests/test_packaging.py checks the result.
+*
+
+!/.gitignore
+!/README.md
+!/LICENSE
+!/pyproject.toml
+!/ruff.toml
+!/CITATION.cff
+!/.github/
+!/.github/workflows/
+!/.github/workflows/*.yml
+
+!/src/
+!/src/ampladder/
+!/src/ampladder/*.py
+
+!/analysis/
+!/analysis/*.py
+
+!/tests/
+!/tests/*.py
+
+!/results/
+!/results/**/
+!/results/**/*.json
+!/results/**/*.jsonl
+!/results/**/*.csv
+
+!/figures/
+!/figures/*.png
+!/figures/*.pdf
+!/figures/*.json
