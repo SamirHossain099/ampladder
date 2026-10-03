@@ -85,9 +85,9 @@ def test_matches_fdnkit_on_plateau_windows_at_the_pipelines_floor():
 
     Measured: max |difference| for q <= 0, where the floored segments dominate, was 6.7e-5 on Windows
     (2026-10-01) and 1.9e-4 on Linux CI (2026-10-03), because which segments round to exactly 0.0
-    depends on the platform's floating-point library; for q > 0, where they barely register, 3.4e-9.
-    The q <= 0 tolerance is therefore 1e-3, a platform-independent bound on rounding noise, and the
-    q > 0 tolerance stays at 1e-8. Both are irrelevant in practice, because plateau windows are excluded from negative-q features
+    depends on the platform's floating-point library; for q > 0, where they barely register, 3.4e-9
+    on Windows and 1.9e-8 on Linux. The tolerances are platform-independent bounds on that rounding
+    noise: 1e-3 for q <= 0 and 1e-7 for q > 0. Both are irrelevant in practice, because plateau windows are excluded from negative-q features
     upstream -- see the next test for why they must be.
     """
     X = _with_flat_runs()
@@ -96,7 +96,7 @@ def test_matches_fdnkit_on_plateau_windows_at_the_pipelines_floor():
     for i, x in enumerate(X):
         _, h_m, hq, _, _ = _reference(x, SCALES, 1, 1e-3)
         assert abs(got["hurst"][i] - h_m) < TOL
-        np.testing.assert_allclose(got["hq"][i][pos], hq[pos], atol=1e-8, rtol=0)
+        np.testing.assert_allclose(got["hq"][i][pos], hq[pos], atol=1e-7, rtol=0)
         np.testing.assert_allclose(got["hq"][i][neg], hq[neg], atol=1e-3, rtol=0)
 
 
