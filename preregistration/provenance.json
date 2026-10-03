@@ -1,0 +1,68 @@
+{
+  "registry": "none: committed to the author's local git repository, not deposited in a public registry",
+  "redaction": {
+    "replacement": "and [REDACTED: one clause referring to an unpublished analysis of other data].",
+    "scope": "exactly one clause, in deviation D0, identical in every version"
+  },
+  "first_ladder_decode": {
+    "file": "results/decode/L0.csv",
+    "created": "2026-10-01T09:46:52-05:00",
+    "source": "filesystem creation time"
+  },
+  "versions": [
+    {
+      "version": 1,
+      "file": "registration_v1_4c121a8.md",
+      "commit": "4c121a8e21bdf92a0f5e9345ff38d373751ae14b",
+      "committed": "2026-10-01 07:26:52 -0500",
+      "commit_subject": "Pre-registration: amplitude-invariance ladder, fixed before any decoding on real data",
+      "sha256_original": "770492d0398673d072e5661bf5c95cfa60670de742f8bad95965c1e02f780c09",
+      "sha256_redacted": "6d4b6da977b16784848c2b7521b9fc7d30910572572f9193cd4f986d7a18be32"
+    },
+    {
+      "version": 2,
+      "file": "registration_v2_75699dd.md",
+      "commit": "75699dd398b2f3dca287c75956619d33ef7fd02c",
+      "committed": "2026-10-01 07:31:56 -0500",
+      "commit_subject": "D1 (circular electrode selection) added before running; gates F2/F3 passed; findings F1-F9",
+      "sha256_original": "a8faf2e683cf7c5a39186d4235567cd822d078ea6a384b49219f7ebcdfac244f",
+      "sha256_redacted": "94baecc8e922ecf6e1526da5efeca0cff75c1c36ace1e77a174e57ebe6e3ba0c"
+    },
+    {
+      "version": 3,
+      "file": "registration_v3_cd41871.md",
+      "commit": "cd4187196098bd7326c50c155624ffe17ebde0aa",
+      "committed": "2026-10-01 07:37:28 -0500",
+      "commit_subject": "Gate 3 passed (accuracy identical, AUROC within 1e-4); D2: PopT per-window not paired, BrainBERT is H3 comparator; added published normalisation ablation",
+      "sha256_original": "8865e8da293a2a47609792afe198a2eb67df4ff43aba9fc2ff61bc579ab085d8",
+      "sha256_redacted": "304e54bd0569af798c03148eaed41818fbd00fc5e5f06078fa91f612c11be78b"
+    },
+    {
+      "version": 4,
+      "file": "registration_v4_188365c.md",
+      "commit": "188365c856d522cc3b6609d6fb0ec0582e2b53d9",
+      "committed": "2026-10-01 09:48:38 -0500",
+      "commit_subject": "D3 (POST HOC): within-session fold construction may leak time; logged before building or running it, with what had been seen",
+      "sha256_original": "7028aca737a74bf10c966f143397981ae3dd8b3866bacfe0719613383201b1ac",
+      "sha256_redacted": "d66ba93c855b1461f92c6fe40052f9ea9d451e1c8ffd178c0f8452a5f2a07cb3"
+    },
+    {
+      "version": 5,
+      "file": "registration_v5_394a77e.md",
+      "commit": "394a77e3cf2fcf3a88563105f03eb2499299e200",
+      "committed": "2026-10-01 11:26:55 -0500",
+      "commit_subject": "D4 (POST HOC): published linear baseline stops after 4 lbfgs iterations; convergence sensitivity logged before building it. Primary analysis results committed.",
+      "sha256_original": "ea82bf88b249eafe91acbd28f3713d645a822a9bfffc03f42a05370817d30951",
+      "sha256_redacted": "e593ab133391c21138eb0ce27527565b6cc4275467d050a8e1b02ea55d6579ea"
+    },
+    {
+      "version": 6,
+      "file": "registration_v6_478cfd8.md",
+      "commit": "478cfd808110b83465787a3afe6c3b83213b2fcf",
+      "committed": "2026-10-01 21:11:54 -0500",
+      "commit_subject": "D5: constant raw-voltage windows in S3 (6 of 134,087 windows x electrodes); excluded and counted, decided before S3 decoding",
+      "sha256_original": "311f135e8724e1a27109d6d7c45026fb592b29731c0b644aa1bac8f203ecd216",
+      "sha256_redacted": "e3329a9fb685bf13decec96891e2629febe96c5356fd7ef0d5a7b3364c95bc97"
+    }
+  ]
+}

@@ -28,6 +28,10 @@
 !/results/**/*.jsonl
 !/results/**/*.csv
 
+!/preregistration/
+!/preregistration/*.md
+!/preregistration/*.json
+
 !/figures/
 !/figures/*.png
 !/figures/*.pdf

@@ -6,6 +6,6 @@
 * selection  circular versus cross-fitted electrode selection (Neuroprobe's rule, ported verbatim)
 
 """
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 from . import foldaudit, ladder, mfdfa, selection  # noqa: F401

@@ -7,7 +7,7 @@ authors:
     family-names: Hossain
     orcid: "https://orcid.org/0009-0003-8986-0946"
     affiliation: "Department of Electrical and Computer Engineering, Texas Tech University"
-version: 0.1.1
+version: 0.1.2
 date-released: 2026-10-03
 doi: 10.5281/zenodo.23113593
 license: MIT

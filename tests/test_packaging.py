@@ -13,7 +13,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FORBIDDEN_NAMES = {"CLAUDE.md", "FINDINGS.md", "CORRECTIONS.md", "PREREGISTRATION.md", "VENUE.md",
                    "MANUSCRIPT.md", "MANUSCRIPT.docx", "MANUSCRIPT.pdf", "references.bib", "references.ris",
                    "references-missing.ris", "zotero_keys.json", "make_docx.py", "make_refs.py",
-                   "verify_refs.py", "prose_scan.py", "register_scan.py", "sync_zotero.py", "build_release.py"}
+                   "verify_refs.py", "prose_scan.py", "register_scan.py", "sync_zotero.py", "build_release.py",
+                   "redact_prereg.py"}
 FORBIDDEN_DIRS = {"submission", "logs", "package", "release_template", ".venv", "features"}
 TEXT = (".py", ".md", ".toml", ".cff", ".yml", ".txt", ".json", ".jsonl", ".csv")
 PRIVATE = re.compile(r"N:[\\/]|neuro_projects|EB-2|Dhanasar")
@@ -42,6 +43,18 @@ def test_no_private_file_in_the_directory_or_in_git():
         bad = [f for f in view if os.path.basename(f) in FORBIDDEN_NAMES
                or set(re.split(r"[\\/]", f)[:-1]) & FORBIDDEN_DIRS]
         assert not bad, bad
+
+
+def test_registration_is_redacted_exactly_once_per_version():
+    """The registration is released with one clause redacted; the redaction must be present, single,
+    and complete, in every version."""
+    d = os.path.join(ROOT, "preregistration")
+    files = sorted(f for f in os.listdir(d) if f.startswith("registration_v"))
+    assert len(files) >= 6
+    for f in files:
+        s = open(os.path.join(d, f), encoding="utf-8").read()
+        assert s.count("[REDACTED: one clause referring to an unpublished analysis of other data]") == 1, f
+        assert "re-analysis in" not in s, f
 
 
 def test_no_em_dash_and_no_private_reference_in_published_text():
