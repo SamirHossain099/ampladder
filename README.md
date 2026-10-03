@@ -50,6 +50,6 @@ repository. The analyses they describe are reported in the paper.
 ## Citation
 
 Archived at Zenodo: [doi:10.5281/zenodo.23113593](https://doi.org/10.5281/zenodo.23113593) (concept DOI,
-always the latest version). See `CITATION.cff`. A manuscript describing the study is in preparation.
+always the latest version). See `CITATION.cff`. A manuscript describing the study is under review.
 
 MIT license.
