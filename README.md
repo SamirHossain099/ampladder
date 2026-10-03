@@ -33,7 +33,7 @@ computed for the paper.
 
 * `analysis/`: every script that produced a number in the paper. Feature extraction and decoding
   need the Brain Treebank recordings (https://BrainTreebank.dev/, CC BY 4.0, about 76 GB) and
-  Neuroprobe (https://github.com/azaho/neuroprobe, MIT, commit b901984). `download_braintreebank.py`
+  Neuroprobe (https://github.com/insight-neuro/neuroprobe, MIT, commit b901984). `download_braintreebank.py`
   records a SHA-256 for every file; `results/provenance/` holds the hashes of the copy analysed.
   Paths default to the author's data drive and can be set on the command line.
 * `results/`: the tables the scripts wrote: per-cell AUROC for every feature set and split, the
